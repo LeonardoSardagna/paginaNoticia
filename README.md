@@ -1,0 +1,2 @@
+# paginaNoticia
+ Página de notícia
