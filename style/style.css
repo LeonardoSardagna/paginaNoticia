@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@200;300;400;500;600;700;800;900 & display=swap'); /* font-family: 'Inter', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    --cor_principal: #fefdf9;
+    --cor_botao : #f15d51;
+    --cor_noticias: #00001a;
+}
