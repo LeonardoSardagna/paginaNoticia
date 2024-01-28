@@ -4,6 +4,7 @@
     --cor_principal: #fefdf9;
     --cor_botao : #f15d51;
     --cor_noticias: #00001a;
+    --cor_titulo_new: #e6ad53;
     --fonte_principal: font-family: 'Inter', sans-serif; 
 }
 
@@ -18,20 +19,123 @@ body{
     box-sizing: border-box;
 }
 
-.container_cabecalho{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-items: center;
+    padding: 5% 5% 2% 5%;
 }
 
 .container_logo img{
     width: 85%;
+    align-items: center;
+    justify-items: center;
 }
-
 
 .link_navegacao{
     text-decoration: none;
     color: rgba(161, 158, 158, 0.767);
     margin: 0 20px;
+}
+
+nav a:hover{
+    border-bottom: solid #00001a 2px;
+    transition: 0.2s ease-in-out;
+    padding: 5px;
+    color: #00001a;
+}
+section{
+    display: flex;
+}
+
+.imagem{
+    width: 90%;
+    margin: 0% 0% 0% 8%;
+}
+.imagem_destaque{
+    display: block;
+}
+
+.container_noticias{
+    width: 80%;
+    margin: 0% 6% 0% 0%;
+    background-color: #00001a;
+    color: #fefdf9;
+    padding: 2%;
+    line-height: 1.5;
+}
+.titulo_new{
+    color: var(--cor_titulo_new);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.conteudo_noticia{
+ font-size: 1rem;
+}
+
+#linha{
+   background-color: grey;
+   height: 1px;
+   width: 100%;
+   margin: 8% 0 8% 0; 
+}
+
+.container_destaque{
+    display: flex;
+    width: 80%;
+    margin: 3% 0% 0% 8%;
+}
+
+.container_destaque_titulo{
+    font-size: 2.5rem;
+}
+
+.container_destaque_paragrafo{
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.botao_informacoes{
+    margin-top: 5%;
+    background-color: var(--cor_botao);
+    color: var(--cor_principal);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.1s ease-in;
+}
+
+.botao_informacoes:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.imagem_card{
+    width: 100%;
+    height: 60%;
+}
+
+.container_principais_noticias_corpo{
+    margin: 5% 5% 0% 0%;
+}
+
+.container_principais_noticias{
+    display: flex;
+    margin: 0% 0% 0% 5%;
+}
+
+.titulo_card_numero{
+    color: gray;
+    font-size: 2.5rem;
+}
+
+.titulo_card_titulo{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.apresentacao_card{
+    margin: 0% 0% 0% 5%;
 }
