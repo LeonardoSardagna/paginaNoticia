@@ -20,74 +20,118 @@
             <a class="link_navegacao" href="#">New</a>
             <a class="link_navegacao" href="#">Popular</a>
             <a class="link_navegacao" href="#">Categorias</a>
+            <a class="botao_hamburguer" href="#"><img src="imagens/Menu.svg" alt="icone do menu"></a>
         </nav>
     </header>
     <main>
         <section class="apresentacao">
             <div class="apresentacao_imagem_destaque">
-                <div>
-                    <img class="imagem" src="imagens/image-web-3-desktop.jpg" alt="formas geometricas coloridas">
-                </div>
-                <div class="apresentacao_destaque">
-                    <div class="apresentacao_destaque_titulo">
-                        <h1>O Futuro Brilhante Da Web 3.0</h1>
-                    </div>
-                    <div class="apresentacao_destaque_paragrafo">
-                        <p>Nós mergulhamos na próxima evolução da web que afirma colocar o poder das plataformas de
-                            volta nas mãos do povo. Mas está realmente destinuado sua promessa?</p>
-                        <button class="botao_informacoes">
-                            Mais Informações
-                        </button>
-                    </div>
+                    <figure>
+                        <img class="imagem" src="imagens/image-web-3-desktop.jpg" alt="formas geometricas coloridas">
+                    </figure>
+                <article class="apresentacao_destaque">
+                        <div class="apresentacao_destaque_titulo">
+                            <h1>O Futuro Brilhante Da Web 3.0</h1>
+                        </div>
+                        <div class="apresentacao_destaque_paragrafo">
+                            <p>Nós mergulhamos na próxima evolução da web que afirma colocar o poder das plataformas de
+                                volta nas mãos do povo. Mas está realmente destinuado sua promessa?</p>
+                            <button class="botao_informacoes">
+                                <p>Mais Informações</p>
+                            </button>
+                        </article>
                 </div>
             </div>
             <div class="container_noticias">
                 <div class="container_corpo">
                     <h2 class="titulo_new">New</h2>
-                    <h3 class="container_titulo">ZUCKERBERG REVELA PLANO PARA IA DE CÓDIGO ABERTO</h3>
+                    <a class="link_noticia" href="#">
+                        <h3 class="container_titulo">ZUCKERBERG REVELA PLANO PARA IA DE CÓDIGO ABERTO</h3>
+                    </a>
                     <p class="container_paragrafo">Mark Zuckerberg busca criar uma Inteligência Artificial Geral de
                         código aberto, tornando-a acessível a todos. </p>
                 </div>
                 <div id="linha"></div>
                 <div class="container_corpo">
-                    <h3 class="container_titulo">OPENAI CRIA EQUIPE PARA ALINHAR IAS COM VALORES HUMANOS</h3>
+                    <a class="link_noticia" href="#">
+                        <h3 class="container_titulo">OPENAI CRIA EQUIPE PARA ALINHAR IAS COM VALORES HUMANOS</h3>
+                    </a>
                     <p class="container_paragrafo">Composta por especialistas de diversas áreas técnicas, a equipe visa
                         garantir a responsabilidade e alinhamento ético na evolução da inteligência artificial.</p>
                 </div>
                 <div id="linha"></div>
                 <div class="container_corpo">
-                    <h3 class="container_titulo">OPENAI ATUALIZA CHATGPT COM NOTÍCIAS</h3>
+                    <a class="link_noticia" href="#">
+                        <h3 class="container_titulo">OPENAI ATUALIZA CHATGPT COM NOTÍCIAS</h3>
+                    </a>
                     <p class="container_paragrafo">A empresa está desenvolvendo uma ferramenta para detectar imagens
-                        geradas pelo DALL-E, disponível em breve para jornalistas.</p>
+                    geradas pelo DALL-E, disponível em breve para jornalistas.</p>
                 </div>
             </div>
         </section>
-        <section class="card_principais_noticias">
-            <div class="noticia">
-                <img class="imagem_card" src="imagens/image-gaming-growth.jpg" alt="">
-                <div class="card">
-                    <h4 class="card_numero">01</h4>
-                    <h5 class="card_titulo">Nova Geração de Consoles Promete Experiência de Jogo Imersiva com
-                        Realidade Virtual Integrada</h5>
+        <!-- <section class="card_principais_noticias">
+            <div class="selecao">
+                <div class="noticia">
+                    <div class="img_box">
+                        <img class="imagem_card" src="imagens/game.avif" alt="controle de video game">
+                    </div>
+                    <div class="card">
+                        <a class="link_card" href="#">
+                            <h5 class="card_titulo">Nova Geração de Consoles: Realidade Virtual Integrada</h5>
+                        </a>
+                        <p>
+                            Os jogadores agora podem mergulhar ainda mais fundo em seus mundos virtuais favoritos, graças a tecnologias inovadoras que oferecem gráficos incríveis e uma sensação tátil aprimorada.
+                        </p>
+                        <p>
+                            Este avanço representa um marco significativo no cenário dos jogos, elevando a barra para uma experiência de entretenimento interativo sem precedentes.
+                        </p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <div class="img_box">
+                        <img class="imagem_card" src="imagens/ia medicina.jpg" alt=" inteligência artificial com robô jogando xadrez com cientista">
+                    </div>
+                    <div class="card">
+                        <a class="link_card"href="#">
+                            <h5 class="card_titulo">Revolucionando a saúde: programa alimentado por IA transforma a
+                                detecção precoce de doenças</h5>
+                        </a>
+                        <p>
+                            Uma equipe de desenvolvedores de software acaba de lançar uma inovadora aplicação de inteligência artificial (IA) que promete revolucionar a detecção precoce de doenças.
+                        </p>
+                        <p>Essa inovação promete não apenas melhorar a eficácia dos diagnósticos, mas também abrir novos caminhos para a prevenção e tratamento mais eficaz de doenças,</p>
+                    </div>
+                </div>
+                <div class="selecao">
+                    <div class="noticia">
+                        <div class="img_box">
+                            <img class="imagem_card" src="imagens/ia.avif" alt=" cérebro humano na placa de circuito de computador inteligência artificial">
+                        </div>
+                        <div class="card">
+                            <a class="link_card" href="#">
+                                <h5 class="card_titulo">Inovação Imparável: Inteligência Artificial Revoluciona a Programação com Novo Algoritmo Autodidata</h5>
+                            </a>
+                            <p>
+                                Em um avanço tecnológico surpreendente, pesquisadores em inteligência artificial (IA) desenvolveram um novo algoritmo autodidata que promete revolucionar a forma como programadores abordam seus projetos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <div class="img_box">
+                            <img class="imagem_card" src="imagens/renderizacao-3d-de-crianca-jogando-jogo-digital_23-2150898496.avif" alt="menino desenvolvendo software no computador">
+                        </div>
+                        <div class="card">
+                            <a class="link_card" href="#">
+                                <h5 class="card_titulo">Jovens Programadores Revolucionam o Mundo Tech com Inovações Sustentáveis</h5>
+                            </a>
+                            <p>
+                                um grupo de jovens programadores está liderando uma revolução na indústria de tecnologia ao desenvolver soluções inovadoras e sustentáveis. Com uma abordagem voltada para a responsabilidade social e ambiental, esses talentosos programadores estão criando aplicativos e softwares que visam resolver desafios globais, como mudanças climáticas, gestão de resíduos e eficiência energética.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="noticia">
-                <img class="imagem_card" src="imagens/image-top-laptops.jpg" alt="">
-                <div class="card">
-                    <h4 class="card_numero">02</h4>
-                    <h5 class="card_titulo">Revolucionando a saúde: programa alimentado por IA transforma a
-                        detecção precoce de doenças</h5>
-                </div>
-            </div>
-            <div class="noticia">
-                <img class="imagem_card" src="imagens/image-retro-pcs.jpg" alt="">
-                <div class="card">
-                    <h4 class="card_numero">03</h4>
-                    <h5 class="card_titulo">Revival Tecnológico: Enthusiasts Resgatam a Era dos PCs Retro,
-                        Celebrando a Nostalgia Digital</h5>
-                </div>
-            </div>
-        </section>
+        </section> -->
     </main>
 </body>
 </html>
