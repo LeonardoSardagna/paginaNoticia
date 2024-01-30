@@ -1,27 +1,22 @@
-@media(max-width:568px){
+@media(max-width:570px){
 
     header{
         margin-bottom: 5%;
-    }
-
-    .botao_hamburguer{
-        visibility: hidden;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
     }
 
     .link_navegacao{
         display: none;
     }
 
-    .apresentacao{
-        display: block;
+    .hamburguer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .imagem{
-        margin: 0% 5% 0% 5%;
-        width: 90%;
+    .apresentacao{
+        display: block;
     }
 
     .apresentacao_destaque{
@@ -32,12 +27,13 @@
     .apresentacao_destaque_titulo h1{
         font-size: 2.2rem;
         font-weight: bold;
-        text-align: center;
+        text-align: left;
     }
 
     .apresentacao_destaque_paragrafo p{
         font-size: 1.5rem;
-        width: 90%;
+        width: auto;
+        
     }
 
     .botao_informacoes p{
@@ -51,25 +47,39 @@
         padding: 20px;
     }
     
-    .card_principais_noticias{
+    .cards_de_noticias{
         display: block;
+        margin: 5% 5% 0% 5%;
     }
 
-    .imag_box{
-        width: 50%;
-        height: 50%;
+    .card_imagem_noticia{
+        width: 250px;
+        border-radius: 10%;
     }
 
-    .card_titulo{
-        font-size: 1rem;
-        font-weight: 800;
-        line-height: 1.5;
-        width: 100%;
+    .figure_card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .noticia{
-        margin: 5% 0% 5% 5%;
+    .cards_destaque{
+        display: block;
+        margin-bottom: 2rem;
     }
+    
+    .card_conteudo{
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .link_card .card_titulo{
+        margin-top: 10px;
+        text-align: center;
+    }
+    
 }
 
 @media(max-width:800px){
@@ -77,15 +87,15 @@
         margin-bottom: 2%;
     }
 
-    .botao_hamburguer{
-        display: none;
-    }
-
     .apresentacao{
         display: block;
     }
 
-    .imagem{
+    .imagem_desktop{
+        display: none;
+    }
+
+    .imagem_mobile{
         margin: 0% 5% 0% 5%;
         width: 90%;
     }
@@ -99,7 +109,9 @@
         font-size: 1.5rem;
         font-weight: bold;
         width: auto;
-        text-align: center;
+        text-align: start;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .apresentacao_destaque_paragrafo{
@@ -123,46 +135,46 @@
         font-size: 1.2rem;
     }
     
-    /* falta fazer */
-
-    .card_principais_noticias{
+    .cards_de_noticias{
         display: block;
+        margin: 5% 5% 0% 5%;
     }
 
-    .imag_box{
-        width: 50%;
-        height: 50%;
+    .card_imagem_noticia{
+        width: 250px;
+        border-radius: 10%;
     }
 
-    .card_titulo{
-        font-size: 1rem;
-        font-weight: 800;
-        line-height: 1.5;
-        width: 100%;
+    .cards_destaque{
+        margin-bottom: 2rem;
+    }
+    
+    .card_conteudo p{
+        width: 250px;
     }
 
-    .noticia{
-        margin: 5% 0% 5% 5%;
+    .card_conteudo h5{
+        width: 250px;
     }
+
+    .link_card h5{
+        margin-top: 10px;
+        text-align: start;
+    }
+
 }
 
 @media(max-width:1000px){
     
-    .botao_hamburguer{
+    .imagem_mobile{
         display: none;
     }
 
-    .apresentacao_destaque{
-        width: 90%;
-    }
-
-    .apresentacao_destaque_paragrafo{
-        font-size: 1.4rem;
+    .apresentacao_destaque_paragrafo p{
         text-align: justify;
     }
 
-    .imagem_card{
-        width: 60%;
-        height: 60%;
+    .cards_de_noticias{
+        display: block;
     }
 }
