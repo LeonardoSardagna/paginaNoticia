@@ -1,20 +1,61 @@
-@media(max-width:570px){
+@media screen and (max-width:570px){
 
     header{
         margin-bottom: 5%;
     }
+    
+    .nav_list{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 50vw;
+        height: 50vh;
+        background-color: #00001ac4;
+        clip-path: circle(100px at 90% -27%);
+        transition: 1s ease-out;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+     .nav_bar.active .nav_list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    } 
+
+    .nav_bar.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav_bar.active .hamburguer::before{
+        transform: rotate(120deg);
+        background: white;
+    }
+
+    .nav_bar.active .hamburguer::after{
+        transform: rotate(-120deg);
+        background: white;
+        top: -7px;
+    }
 
     .link_navegacao{
-        display: none;
+        color: white;
     }
 
     .hamburguer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: block;
+        z-index: 1;
     }
-
+    
+  
     .apresentacao{
         display: block;
     }
