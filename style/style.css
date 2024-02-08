@@ -3,7 +3,7 @@
 :root{
     --cor_principal: #fefdf9;
     --cor_botao : #f15d51;
-    --cor_noticias: #00001a;
+    --cor_noticias: #00001a ;
     --cor_titulo_new: #e6ad53;
     --cor_link_navegacao: rgba(105, 104, 104, 0.767);
     --fonte_principal: font-family: 'Inter', sans-serif; 
@@ -19,15 +19,74 @@
 body{
     background-color: var(--cor_principal);
     overflow-x: hidden;
+    transition: 2s;
 }
 
 header{
     padding: 5% 5% 2% 5%;
 }
 
+.darkModeToggle{
+    background-color: var(--cor_noticias);
+    color: var(--cor_principal);
+}
+
 .container_cabecalho{
     display: flex;
     align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: -8px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
 
 .hamburguer{
@@ -73,6 +132,12 @@ header{
 .link_navegacao{
     text-decoration: none;
     color: var(--cor_noticias);
+    transition: 0.3s;
+}
+
+.link_navegacao.active{
+    text-decoration: none;
+    color: var(--cor_principal);
     transition: 0.3s;
 }
 
@@ -136,6 +201,16 @@ header{
     padding: 2%;
     line-height: 1.5;
 }
+
+.container_noticias.active{
+    width: 80%;
+    margin: 0% 6% 5% 0%;
+    background-color: #0c0c4562;
+    color: #fefdf9;
+    padding: 2%;
+    line-height: 1.5;
+}
+
 .titulo_new{
     color: var(--cor_titulo_new);
     text-align: center;
@@ -192,6 +267,12 @@ header{
     font-size: 2rem;
 }
 
+.link_card.active{
+    text-decoration: none;
+    color: var(--cor_botao);
+    font-size: 2rem;
+}
+
 .link_card h5{
     width: 24rem;
 }
@@ -202,6 +283,18 @@ header{
     padding: 20px;
     flex-direction: column;
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.rodape.active{
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+    flex-direction: column;
+    background: linear-gradient(90deg, #0000007e, #00001a);
+    /* Outras propriedades do seu código... */
+    color: #fff; /* Cor do texto para contrastar com o fundo */
+    font-family: Arial, sans-serif;
+    border-top: solid rgb(0, 4, 56);
 }
 
 .rodape_redes{
@@ -221,4 +314,3 @@ header{
     color: var(--cor_principal);
     margin-left: 2rem;
 }
-
